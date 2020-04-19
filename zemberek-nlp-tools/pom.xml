@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.kemal</groupId>
+  <artifactId>turkish-nlp-tools</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <repositories>
+      <repository>
+          <id>zemberek-repo</id>
+          <name>zemberek Maven Repo on Github</name>
+          <url>https://raw.github.com/ahmetaa/maven-repo/master</url>
+      </repository>
+  </repositories>
+  
+  <dependencies>
+    <dependency>
+      <groupId>zemberek-nlp</groupId>
+      <artifactId>zemberek-morphology</artifactId>
+      <version>0.17.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>zemberek-nlp</groupId>
+      <artifactId>zemberek-core</artifactId>
+      <version>0.17.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>zemberek-nlp</groupId>
+      <artifactId>zemberek-normalization</artifactId>
+      <version>0.17.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>zemberek-nlp</groupId>
+      <artifactId>zemberek-tokenization</artifactId>
+      <version>0.17.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+       <groupId>org.mongodb</groupId>
+       <artifactId>mongodb-driver-sync</artifactId>
+       <version>4.0.2</version>
+    </dependency>
+  </dependencies>
+</project>
