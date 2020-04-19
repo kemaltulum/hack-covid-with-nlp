@@ -13077,7 +13077,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="An-Unsupervised-Approach-Over-Twitter-Data-Set">An Unsupervised Approach Over Twitter Data Set<a class="anchor-link" href="#An-Unsupervised-Approach-Over-Twitter-Data-Set">&#182;</a></h1><h2 id="Motivation-&amp;-Observations">Motivation &amp; Observations<a class="anchor-link" href="#Motivation-&amp;-Observations">&#182;</a></h2><p>Nowadays, as an observation, since we are experiencing extreme conditions, people are more interested in the daily agenda of their country. I suppose that this tendency is more observable in the country where the pandemy is more severe.</p>
+<h1 id="An-Unsupervised-Approach-Over-Tweets-Related-With-Daily-Agenda">An Unsupervised Approach Over Tweets Related With Daily Agenda<a class="anchor-link" href="#An-Unsupervised-Approach-Over-Tweets-Related-With-Daily-Agenda">&#182;</a></h1><h2 id="Motivation-&amp;-Observations">Motivation &amp; Observations<a class="anchor-link" href="#Motivation-&amp;-Observations">&#182;</a></h2><p>Nowadays, as an observation, since we are experiencing extreme conditions, people are more interested in the daily agenda of their country. I suppose that this tendency is more observable in the country where the pandemy is more severe.</p>
 <p>In a television program, a Turkish woman from Italy while telling about their life under quarantine mentioned that they were watching regularly the speeches of politicians everyday on 6pm in order to hear good or bad news. After that, they spend the tonight to discuss the daily news with their friends on telephone.</p>
 <p>We can propose that social media is the medium of today where people discuss daily news and express their reactions on them. Twitter is the most effective one for us, developers, among other social media as being the place where all can participate freely expressing their ideas and also providing a decent API for facilitating dataset creation.</p>
 <p>Though it is not coronavirus specific, it is critically important for policy makers to effectively measure the reactions of the public on specific topics, news or agenda. This would be important for dealing with Coronavirus Pandemy. For one thing, in these days, governments should make their people comply with precautions, even the extreme ones like curfew, while not making them desperate about future thereby stabilizing economic indicators over a course of time. This difficult task can only be achieved with continually observing the mood of the people with effective measurement techniques and tools.</p>
@@ -13089,13 +13089,6 @@ div#notebook {
 </ul>
 <p>However, I will try to do my best to showcase what is done and what is missing</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Related-Work-&amp;-Ideas">Related Work &amp; Ideas<a class="anchor-link" href="#Related-Work-&amp;-Ideas">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13141,7 +13134,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[196]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13158,7 +13151,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[197]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;tweet_data.csv&#39;</span><span class="p">)</span>
@@ -13171,7 +13164,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[198]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13187,7 +13180,7 @@ Zemberek is utiilzed</li>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[198]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -13233,16 +13226,16 @@ Zemberek is utiilzed</li>
       <td>1247616672481062913</td>
       <td>Tue Apr 07 20:06:08 +0000 2020</td>
       <td>#şüpheduymuyorum</td>
-      <td>@fatihportakal hemen hemen hergün 70’li sayılar veriliyor ölenler için bu bir tesadüf müdür #suepheduymuyorum diyemeyeceğim kanun vs bir hükümmü var acaba ayar veriliyor..???</td>
+      <td>@fatihportakal hemen hemen hergün 70’li sayıla...</td>
       <td>0</td>
       <td>0</td>
       <td>276</td>
-      <td>hemen hemen hergün 70 sayı vermek ölmek için bu bir tesadüf müdür demek kânun vs bir hüküm mü var acaba ayar vermek</td>
-      <td>hemen hemen hergün 70 li sayılar veriliyor ölenler için bu bir tesadüf müdür  diyemeyeceğim kanun vs bir hüküm mü var acaba ayar veriliyor</td>
+      <td>hemen hemen hergün 70 sayı vermek ölmek için b...</td>
+      <td>hemen hemen hergün 70 li sayılar veriliyor öl...</td>
       <td>1</td>
       <td>1</td>
       <td>0</td>
-      <td>hemen hemen hergün 70 sayı vermek ölmek tesadüf müdür demek kânun vs hüküm ayar vermek</td>
+      <td>hemen hemen hergün 70 sayı vermek ölmek tesadü...</td>
     </tr>
     <tr>
       <th>1</th>
@@ -13250,12 +13243,12 @@ Zemberek is utiilzed</li>
       <td>1247466322512031744</td>
       <td>Tue Apr 07 10:08:42 +0000 2020</td>
       <td>#şüpheduymuyorum</td>
-      <td>@fatihportakal Senin bi amerikan ciciş köpüşü olusundan artık #şüpheduymuyorum @fatihportakal 😅😅hanimişşş hanimiş finifiniii</td>
+      <td>@fatihportakal Senin bi amerikan ciciş köpüşü ...</td>
       <td>0</td>
       <td>1</td>
       <td>63</td>
       <td>sen bir Amerikan cici kopmak olmak artık  hanım</td>
-      <td>senin bir amerikan cici kopuşu oluşundan artık     hanımısss hanımın finifiniii</td>
+      <td>senin bir amerikan cici kopuşu oluşundan artı...</td>
       <td>1</td>
       <td>2</td>
       <td>0</td>
@@ -13267,16 +13260,16 @@ Zemberek is utiilzed</li>
       <td>1247435972490473472</td>
       <td>Tue Apr 07 08:08:06 +0000 2020</td>
       <td>#şüpheduymuyorum</td>
-      <td>#DünyaSağlıkGünü #şüpheduymuyorum #kitlervarlaborantlarneredeTıbbi tanı ve tedavide temel belirleyici unsuru çok büyük oranda laboratuvar bulguları   oluşturmaktadır. Bu kadar önemli bir hizmeti yerine getiren ‘’Tıbbi Laboratuvar Teknikerlerine’’ hak ettiği kadrolar verilmelidir.</td>
+      <td>#DünyaSağlıkGünü #şüpheduymuyorum #kitlervarla...</td>
       <td>1</td>
       <td>2</td>
       <td>122</td>
-      <td>tanımak ve tedavi temel belirlemek unsur çok büyük oran laboratuvar bulgu oluşmak bu kadar önem bir hizmet yer getirmek tıbbî laboratuvar tekniker hak etmek kadro vermek</td>
-      <td>tanı ve tedavide temel belirleyici unsuru çok büyük oranda laboratuvar bulguları oluşturmaktadır bu kadar önemli bir hizmeti yerine getiren tıbbi laboratuvar teknikerlerine hak ettiği kadrolar verilmelidir</td>
+      <td>tanımak ve tedavi temel belirlemek unsur çok b...</td>
+      <td>tanı ve tedavide temel belirleyici unsuru ç...</td>
       <td>3</td>
       <td>0</td>
       <td>0</td>
-      <td>tanımak tedavi temel belirlemek unsur büyük oran laboratuvar bulgu oluşmak önem hizmet yer getirmek tıbbî laboratuvar tekniker hak etmek kadro vermek</td>
+      <td>tanımak tedavi temel belirlemek unsur büyük or...</td>
     </tr>
     <tr>
       <th>3</th>
@@ -13284,16 +13277,16 @@ Zemberek is utiilzed</li>
       <td>1247276012964130816</td>
       <td>Mon Apr 06 21:32:29 +0000 2020</td>
       <td>#şüpheduymuyorum</td>
-      <td>@fatihportakal Biri Baban Diğeri Deden Olan Sözde Dünya Devleri Amerika ve Avrupa Dolar ve Euro Kur Farkını Kaldırana Kadar \nTL İle \nEşit Olana Kadar Onlara Yardım Etmeyelim\n#suepheduymuyorum</td>
+      <td>@fatihportakal Biri Baban Diğeri Deden Olan Sö...</td>
       <td>0</td>
       <td>0</td>
       <td>527</td>
-      <td>biri baba diğer de olmak söz dünya dev Amerika ve Avrupa dolar ve euro kur fark kaldırmak kadar Tl ile eşit olmak kadar o yardım etmek</td>
-      <td>biri baban diğeri deden olan sözde dünya devleri amerika ve avrupa dolar ve euro kur farkını kaldırana kadar tl ile eşit olana kadar onlara yardım etmeyelim</td>
+      <td>biri baba diğer de olmak söz dünya dev Amerika...</td>
+      <td>biri baban diğeri deden olan sözde dünya devl...</td>
       <td>1</td>
       <td>1</td>
       <td>0</td>
-      <td>baba söz dünya dev Amerika Avrupa dolar euro kur fark kaldırmak Tl eşit yardım etmek</td>
+      <td>baba söz dünya dev Amerika Avrupa dolar euro k...</td>
     </tr>
     <tr>
       <th>4</th>
@@ -13301,16 +13294,16 @@ Zemberek is utiilzed</li>
       <td>1247182225466146816</td>
       <td>Mon Apr 06 15:19:48 +0000 2020</td>
       <td>#şüpheduymuyorum</td>
-      <td>Denklik bekleyen Türk Hekimleri olarak ben ve yüzlerce arkadaşım sahada görev almak istiyoruz. Evlerimizde seyirci kalmak istemiyoruz. :::#denklikbekleyendoktorlargörevehazır #şüpheduymuyorum @FOXTurkiye @FOXhaber @fatihportakal @drfahrettinkoca @RTErdogan @VahdetOzkocak</td>
+      <td>Denklik bekleyen Türk Hekimleri olarak ben ve ...</td>
       <td>0</td>
       <td>0</td>
       <td>18</td>
-      <td>denklik beklemek Türk hekim olmak ben ve yüz arkadaş saha görev almak istemek ev seyirci kalmak istemek</td>
-      <td>denklik bekleyen türk hekimleri olarak ben ve yüzlerce arkadaşım sahada görev almak istiyoruz evlerimizde seyirci kalmak istemiyoruz</td>
+      <td>denklik beklemek Türk hekim olmak ben ve yüz a...</td>
+      <td>denklik bekleyen türk hekimleri olarak ben ve ...</td>
       <td>2</td>
       <td>6</td>
       <td>0</td>
-      <td>denklik beklemek Türk hekim arkadaş saha görev almak istemek ev seyirci kalmak istemek</td>
+      <td>denklik beklemek Türk hekim arkadaş saha görev...</td>
     </tr>
   </tbody>
 </table>
@@ -13325,7 +13318,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[199]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -13341,7 +13334,7 @@ Zemberek is utiilzed</li>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[199]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -13476,7 +13469,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[200]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span><span class="p">[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;hashtag_id&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;hashtag_id&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
@@ -13492,7 +13485,7 @@ Zemberek is utiilzed</li>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[200]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -13568,7 +13561,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[201]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span> <span class="o">=</span> <span class="n">tweet_df</span><span class="p">[</span><span class="n">tweet_df</span><span class="p">[</span><span class="s1">&#39;lemmatized_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">notna</span><span class="p">()]</span>
@@ -13581,7 +13574,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[202]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span><span class="o">.</span><span class="n">shape</span>
@@ -13597,7 +13590,7 @@ Zemberek is utiilzed</li>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[202]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -13632,7 +13625,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[203]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">hashtags_map</span> <span class="o">=</span> <span class="p">{</span>
@@ -13671,7 +13664,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[204]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">hashtag_day</span> <span class="o">=</span> <span class="s2">&quot;06.04&quot;</span>
@@ -13685,7 +13678,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[205]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span> <span class="o">=</span> <span class="n">hashtags_by_day</span><span class="p">[</span><span class="n">hashtag_day</span><span class="p">]</span>
@@ -13708,7 +13701,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[206]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
@@ -13733,7 +13726,7 @@ Zemberek is utiilzed</li>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[206]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -13757,7 +13750,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[207]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">word_vectors</span> <span class="o">=</span> <span class="n">KeyedVectors</span><span class="o">.</span><span class="n">load_word2vec_format</span><span class="p">(</span><span class="s1">&#39;/home/kemal/Desktop/Workspace/Turkish-Word2Vec/trmodel_me&#39;</span><span class="p">,</span> <span class="n">binary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -13770,7 +13763,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[208]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_vectors_all</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13809,7 +13802,7 @@ Zemberek is utiilzed</li>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[208]:</div>
+    <div class="prompt output_prompt">Out[34]:</div>
 
 
 
@@ -13834,10 +13827,12 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[209]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
+
 
 <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">X_reduced</span><span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
@@ -13854,7 +13849,7 @@ Zemberek is utiilzed</li>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[209]:</div>
+    <div class="prompt output_prompt">Out[35]:</div>
 
 
 
@@ -13871,7 +13866,7 @@ Zemberek is utiilzed</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[210]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_reduced_w2vec</span><span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_w2vec</span><span class="p">)</span>
@@ -13888,7 +13883,7 @@ Zemberek is utiilzed</li>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[210]:</div>
+    <div class="prompt output_prompt">Out[36]:</div>
 
 
 
@@ -13937,14 +13932,14 @@ plt.show()
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Since this process take some time I will include graphs as images which are generated before</p>
+<p>Since this process take some time I will include graphs as images which are generated before for the datasets on different days</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[211]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
@@ -13961,7 +13956,7 @@ plt.show()
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[211]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -13980,7 +13975,7 @@ plt.show()
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[212]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;graphs/elbow_method_03.04.png&#39;</span><span class="p">)</span>
@@ -13996,7 +13991,7 @@ plt.show()
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[212]:</div>
+    <div class="prompt output_prompt">Out[38]:</div>
 
 
 
@@ -14015,7 +14010,7 @@ plt.show()
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[213]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;graphs/elbow_method_06.04.png&#39;</span><span class="p">)</span> 
@@ -14031,7 +14026,7 @@ plt.show()
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[213]:</div>
+    <div class="prompt output_prompt">Out[39]:</div>
 
 
 
@@ -14053,27 +14048,14 @@ plt.show()
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Choose k = 20 for TF-IDF Approach</strong></p>
 <p>From the diagrams, 20 will be good point where the curve starts to be linearized.</p>
-<p>However, it seems that there would be higher <strong>k</strong> values, which should be later</p>
+<p>However, it seems that there would be higher <strong>k</strong> values, which should be tested later</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[214]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">20</span>
@@ -14086,6 +14068,13 @@ plt.show()
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Find-out-k-for-w2vec-approach">Find out k for w2vec approach<a class="anchor-link" href="#Find-out-k-for-w2vec-approach">&#182;</a></h4>
+</div>
+</div>
 </div>from sklearn.cluster import KMeans
 from sklearn import metrics
 from scipy.spatial.distance import cdist
@@ -14112,7 +14101,7 @@ plt.show()
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[215]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;graphs/elbow_method_w2vec_06.04.png&#39;</span><span class="p">)</span> 
@@ -14128,7 +14117,7 @@ plt.show()
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[215]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -14150,14 +14139,14 @@ plt.show()
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Choose k = 30 for Word2Vec Approach</strong></p>
 <p>From the diagrams, 30 will be good point where the curve starts to be linearized.</p>
-<p>However, it seems that there would be higher <strong>k</strong> values, which should be later</p>
+<p>However, it seems that there would be higher <strong>k</strong> values, which should be tested later</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[216]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">k_w2vec</span> <span class="o">=</span> <span class="mi">30</span>
@@ -14173,7 +14162,7 @@ plt.show()
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[217]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.manifold</span> <span class="kn">import</span> <span class="n">TSNE</span>
@@ -14197,8 +14186,8 @@ plt.show()
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[t-SNE] Computing 301 nearest neighbors...
-[t-SNE] Indexed 5251 samples in 1.139s...
-[t-SNE] Computed neighbors for 5251 samples in 52.407s...
+[t-SNE] Indexed 5251 samples in 0.875s...
+[t-SNE] Computed neighbors for 5251 samples in 46.661s...
 [t-SNE] Computed conditional probabilities for sample 1000 / 5251
 [t-SNE] Computed conditional probabilities for sample 2000 / 5251
 [t-SNE] Computed conditional probabilities for sample 3000 / 5251
@@ -14218,7 +14207,7 @@ plt.show()
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[218]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_embedded_w2vec</span> <span class="o">=</span> <span class="n">tsne</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_w2vec</span><span class="p">)</span>
@@ -14240,7 +14229,7 @@ plt.show()
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[t-SNE] Computing 301 nearest neighbors...
 [t-SNE] Indexed 5251 samples in 0.203s...
-[t-SNE] Computed neighbors for 5251 samples in 21.695s...
+[t-SNE] Computed neighbors for 5251 samples in 19.944s...
 [t-SNE] Computed conditional probabilities for sample 1000 / 5251
 [t-SNE] Computed conditional probabilities for sample 2000 / 5251
 [t-SNE] Computed conditional probabilities for sample 3000 / 5251
@@ -14248,7 +14237,7 @@ plt.show()
 [t-SNE] Computed conditional probabilities for sample 5000 / 5251
 [t-SNE] Computed conditional probabilities for sample 5251 / 5251
 [t-SNE] Mean sigma: 2.014060
-[t-SNE] KL divergence after 250 iterations with early exaggeration: 72.101845
+[t-SNE] KL divergence after 250 iterations with early exaggeration: 72.101837
 [t-SNE] KL divergence after 1000 iterations: 2.239185
 </pre>
 </div>
@@ -14260,7 +14249,7 @@ plt.show()
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[219]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># sns settings</span>
@@ -14305,7 +14294,7 @@ plt.show()
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[220]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plot</span>
@@ -14342,9 +14331,17 @@ plt.show()
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Comparison">Comparison<a class="anchor-link" href="#Comparison">&#182;</a></h3><p>By visual inspection, w2vec seems to be better. But this should be tested later with a supervised approach just like in the <a href="https://www.kaggle.com/maksimeren/covid-19-literature-clustering#Dimensionality-Reduction-with-t-SNE">notebook</a> mentioned before</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[221]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -14390,7 +14387,7 @@ plt.show()
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[222]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">X_embedded_w2vec</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">X_embedded_w2vec</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">hue</span><span class="o">=</span><span class="n">y_pred</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="n">palette</span><span class="p">)</span>
@@ -14439,7 +14436,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[223]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">LatentDirichletAllocation</span>
@@ -14453,7 +14450,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[224]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Functions for printing keywords for each topic</span>
@@ -14481,7 +14478,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 
     <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
         <span class="c1"># Creating a vectorizer</span>
-        <span class="n">vectorizers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">CountVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lowercase</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">token_pattern</span><span class="o">=</span><span class="s1">&#39;[a-zA-ZüğşıöçÜĞŞİÇÖ\-][a-zA-ZüğşıöçÜĞŞİÇÖ\-]{2,}&#39;</span><span class="p">))</span>
+        <span class="n">vectorizers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">CountVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lowercase</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">token_pattern</span><span class="o">=</span><span class="s1">&#39;[a-zA-ZâüğşıöçÜĞŞİÇÖ\-][a-zA-ZâüğşıöçÜĞŞİÇÖ\-]{2,}&#39;</span><span class="p">))</span>
 
     <span class="n">vectorized_data</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -14537,7 +14534,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[225]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">20</span>
@@ -14551,9 +14548,18 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="How-to-measure-social-interaction-over-clustered-tweets">How to measure social interaction over clustered tweets<a class="anchor-link" href="#How-to-measure-social-interaction-over-clustered-tweets">&#182;</a></h3><p>This is a question that should be answered later on. I suppose the mean values of favorites and retweet counts over a cluster indicates significancy of the topic</p>
+<p>Other fields are also added to <code>summary_df</code> for inspection</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[226]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">summary_df_arr</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14581,11 +14587,11 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[227]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">summary_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;favorite_mean&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">summary_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;favorite_mean&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14610,7 +14616,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[227]:</div>
+    <div class="prompt output_prompt">Out[53]:</div>
 
 
 
@@ -14648,7 +14654,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
     <tr>
       <th>11</th>
       <td>11</td>
-      <td>lif tek milliye anlamak birlik cumhurbaşkanı yargılamak bravo adnan</td>
+      <td>demek tekâlif milliye ülke devlet istiklâl yan düşman kıyaslamak hastane</td>
       <td>190</td>
       <td>33.768421</td>
       <td>7.984211</td>
@@ -14660,7 +14666,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
     <tr>
       <th>5</th>
       <td>5</td>
-      <td>hastane atatürk havalimanı milliye reis muş yırtmak yarabbi val billahi</td>
+      <td>atatürk havalimanı hastane fikir demek kanalistanbul ihale tütün</td>
       <td>217</td>
       <td>28.313364</td>
       <td>5.755760</td>
@@ -14672,7 +14678,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
     <tr>
       <th>19</th>
       <td>19</td>
-      <td>zorunlu bağış maaş toplamak devlet demek uçak ödemek vergi zor kral</td>
+      <td>maaş gönül zorunlu uçak bağış polis demek almak para</td>
       <td>100</td>
       <td>15.820000</td>
       <td>4.520000</td>
@@ -14684,7 +14690,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
     <tr>
       <th>15</th>
       <td>15</td>
-      <td>sağlık çalışmak etmek bakan işçi değer renk bakanlık ihtimal bulaşmak tara</td>
+      <td>sağlık çalışmak etmek makam demek personel hastane eldiven boş mal</td>
       <td>167</td>
       <td>13.724551</td>
       <td>4.239521</td>
@@ -14696,7 +14702,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
     <tr>
       <th>1</th>
       <td>1</td>
-      <td>sayı test hastane vaka vefat kişi mia</td>
+      <td>sayı test vaka hastane testi açıklamak ağrı</td>
       <td>87</td>
       <td>11.988506</td>
       <td>4.494253</td>
@@ -14704,6 +14710,186 @@ In that notebook, this method is used to extract topics from cluster of papers. 
       <td>1043</td>
       <td>391</td>
       <td>279405</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>10</td>
+      <td>çalışmak demek çıkmak para hastane vatandaş gitmek çocuk atatürk ses duymak okumak sigorta kemal</td>
+      <td>1848</td>
+      <td>11.034632</td>
+      <td>2.774351</td>
+      <td>2759.888528</td>
+      <td>20392</td>
+      <td>5127</td>
+      <td>5100274</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>devam etmek demek insan ses kişi katliam çalışmak kurul diyanet</td>
+      <td>380</td>
+      <td>9.739474</td>
+      <td>1.952632</td>
+      <td>4403.921053</td>
+      <td>3701</td>
+      <td>742</td>
+      <td>1673490</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>12</td>
+      <td>ses çalışmak risk yan istemek sınav kadro durum kolay üniversite çan eğri</td>
+      <td>192</td>
+      <td>9.234375</td>
+      <td>2.552083</td>
+      <td>1060.864583</td>
+      <td>1773</td>
+      <td>490</td>
+      <td>203686</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>18</td>
+      <td>ihtiyaç sürekli güvenlik işçi okul</td>
+      <td>89</td>
+      <td>9.179775</td>
+      <td>4.876404</td>
+      <td>46.988764</td>
+      <td>817</td>
+      <td>434</td>
+      <td>4182</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>almak maske para satmak devlet demek millet gerçek taksa</td>
+      <td>339</td>
+      <td>6.457227</td>
+      <td>1.041298</td>
+      <td>3039.439528</td>
+      <td>2189</td>
+      <td>353</td>
+      <td>1030370</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>beklemek öğretmen okul mart etmek hak atamak vermek ders</td>
+      <td>96</td>
+      <td>5.635417</td>
+      <td>3.531250</td>
+      <td>1262.406250</td>
+      <td>541</td>
+      <td>339</td>
+      <td>121191</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>yardım etmek devlet dönem almak gün kapı vali yavaş esnaf ödemek bağımsız</td>
+      <td>269</td>
+      <td>4.501859</td>
+      <td>0.914498</td>
+      <td>523.193309</td>
+      <td>1211</td>
+      <td>246</td>
+      <td>140739</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>6</td>
+      <td>görmek almak emekli ikramiye vermek ptt oynamak sevinmek</td>
+      <td>94</td>
+      <td>4.404255</td>
+      <td>2.000000</td>
+      <td>522.234043</td>
+      <td>414</td>
+      <td>188</td>
+      <td>49090</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>taşeron radyoloji kamu radyasyon görüntülemek etmek hizmet kalmak tekniker</td>
+      <td>68</td>
+      <td>3.426471</td>
+      <td>1.882353</td>
+      <td>333.514706</td>
+      <td>233</td>
+      <td>128</td>
+      <td>22679</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>17</td>
+      <td>girmek okumak haber öğreti izlemek geçmek çıkmak etmek gerçek yer devlet</td>
+      <td>131</td>
+      <td>2.977099</td>
+      <td>1.763359</td>
+      <td>2229.076336</td>
+      <td>390</td>
+      <td>231</td>
+      <td>292009</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>kira çalışmak fatura gün ödemek gitmek kalmak insan saat maske enerji ohal tavsiye balkon</td>
+      <td>280</td>
+      <td>2.550000</td>
+      <td>0.353571</td>
+      <td>572.225000</td>
+      <td>714</td>
+      <td>99</td>
+      <td>160223</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>14</td>
+      <td>yok gelir para devlet ücret vermek fatih kafa kürt müzisyen</td>
+      <td>233</td>
+      <td>1.987124</td>
+      <td>0.454936</td>
+      <td>545.399142</td>
+      <td>463</td>
+      <td>106</td>
+      <td>127078</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>16</td>
+      <td>savaş kurtulmak etmek vermek dünya yıl yok varmak</td>
+      <td>87</td>
+      <td>1.781609</td>
+      <td>0.390805</td>
+      <td>1052.632184</td>
+      <td>155</td>
+      <td>34</td>
+      <td>91579</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>maaş çalışmak almak kalmak kesinti gelmek kesmek çıkmak açıklamak bırakmak mezun vermek gün</td>
+      <td>224</td>
+      <td>1.495536</td>
+      <td>0.410714</td>
+      <td>317.897321</td>
+      <td>335</td>
+      <td>92</td>
+      <td>71209</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>13</td>
+      <td>banka ertelemek kredi vermek destek haber ödemek kart sicil esnaf yardımcı teskomb</td>
+      <td>160</td>
+      <td>1.443750</td>
+      <td>0.643750</td>
+      <td>636.812500</td>
+      <td>231</td>
+      <td>103</td>
+      <td>101890</td>
     </tr>
   </tbody>
 </table>
@@ -14725,7 +14911,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[228]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">30</span>
@@ -14741,7 +14927,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[229]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">summary_df_arr</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14769,11 +14955,11 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[230]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">summary_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;favorite_mean&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">summary_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;favorite_mean&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14798,7 +14984,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[230]:</div>
+    <div class="prompt output_prompt">Out[56]:</div>
 
 
 
@@ -14836,7 +15022,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
     <tr>
       <th>11</th>
       <td>11</td>
-      <td>lif tek milliye anlamak birlik cumhurbaşkanı yargılamak bravo adnan</td>
+      <td>demek tekâlif milliye ülke devlet istiklâl yan düşman kıyaslamak hastane</td>
       <td>190</td>
       <td>33.768421</td>
       <td>7.984211</td>
@@ -14848,7 +15034,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
     <tr>
       <th>5</th>
       <td>5</td>
-      <td>hastane atatürk havalimanı milliye reis muş yırtmak yarabbi val billahi</td>
+      <td>atatürk havalimanı hastane fikir demek kanalistanbul ihale tütün</td>
       <td>217</td>
       <td>28.313364</td>
       <td>5.755760</td>
@@ -14860,7 +15046,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
     <tr>
       <th>19</th>
       <td>19</td>
-      <td>zorunlu bağış maaş toplamak devlet demek uçak ödemek vergi zor kral</td>
+      <td>maaş gönül zorunlu uçak bağış polis demek almak para</td>
       <td>100</td>
       <td>15.820000</td>
       <td>4.520000</td>
@@ -14872,7 +15058,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
     <tr>
       <th>15</th>
       <td>15</td>
-      <td>sağlık çalışmak etmek bakan işçi değer renk bakanlık ihtimal bulaşmak tara</td>
+      <td>sağlık çalışmak etmek makam demek personel hastane eldiven boş mal</td>
       <td>167</td>
       <td>13.724551</td>
       <td>4.239521</td>
@@ -14884,7 +15070,7 @@ In that notebook, this method is used to extract topics from cluster of papers. 
     <tr>
       <th>1</th>
       <td>1</td>
-      <td>sayı test hastane vaka vefat kişi mia</td>
+      <td>sayı test vaka hastane testi açıklamak ağrı</td>
       <td>87</td>
       <td>11.988506</td>
       <td>4.494253</td>
@@ -14892,6 +15078,186 @@ In that notebook, this method is used to extract topics from cluster of papers. 
       <td>1043</td>
       <td>391</td>
       <td>279405</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>10</td>
+      <td>çalışmak demek çıkmak para hastane vatandaş gitmek çocuk atatürk ses duymak okumak sigorta kemal</td>
+      <td>1848</td>
+      <td>11.034632</td>
+      <td>2.774351</td>
+      <td>2759.888528</td>
+      <td>20392</td>
+      <td>5127</td>
+      <td>5100274</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>devam etmek demek insan ses kişi katliam çalışmak kurul diyanet</td>
+      <td>380</td>
+      <td>9.739474</td>
+      <td>1.952632</td>
+      <td>4403.921053</td>
+      <td>3701</td>
+      <td>742</td>
+      <td>1673490</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>12</td>
+      <td>ses çalışmak risk yan istemek sınav kadro durum kolay üniversite çan eğri</td>
+      <td>192</td>
+      <td>9.234375</td>
+      <td>2.552083</td>
+      <td>1060.864583</td>
+      <td>1773</td>
+      <td>490</td>
+      <td>203686</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>18</td>
+      <td>ihtiyaç sürekli güvenlik işçi okul</td>
+      <td>89</td>
+      <td>9.179775</td>
+      <td>4.876404</td>
+      <td>46.988764</td>
+      <td>817</td>
+      <td>434</td>
+      <td>4182</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>almak maske para satmak devlet demek millet gerçek taksa</td>
+      <td>339</td>
+      <td>6.457227</td>
+      <td>1.041298</td>
+      <td>3039.439528</td>
+      <td>2189</td>
+      <td>353</td>
+      <td>1030370</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>beklemek öğretmen okul mart etmek hak atamak vermek ders</td>
+      <td>96</td>
+      <td>5.635417</td>
+      <td>3.531250</td>
+      <td>1262.406250</td>
+      <td>541</td>
+      <td>339</td>
+      <td>121191</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>yardım etmek devlet dönem almak gün kapı vali yavaş esnaf ödemek bağımsız</td>
+      <td>269</td>
+      <td>4.501859</td>
+      <td>0.914498</td>
+      <td>523.193309</td>
+      <td>1211</td>
+      <td>246</td>
+      <td>140739</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>6</td>
+      <td>görmek almak emekli ikramiye vermek ptt oynamak sevinmek</td>
+      <td>94</td>
+      <td>4.404255</td>
+      <td>2.000000</td>
+      <td>522.234043</td>
+      <td>414</td>
+      <td>188</td>
+      <td>49090</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>taşeron radyoloji kamu radyasyon görüntülemek etmek hizmet kalmak tekniker</td>
+      <td>68</td>
+      <td>3.426471</td>
+      <td>1.882353</td>
+      <td>333.514706</td>
+      <td>233</td>
+      <td>128</td>
+      <td>22679</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>17</td>
+      <td>girmek okumak haber öğreti izlemek geçmek çıkmak etmek gerçek yer devlet</td>
+      <td>131</td>
+      <td>2.977099</td>
+      <td>1.763359</td>
+      <td>2229.076336</td>
+      <td>390</td>
+      <td>231</td>
+      <td>292009</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>kira çalışmak fatura gün ödemek gitmek kalmak insan saat maske enerji ohal tavsiye balkon</td>
+      <td>280</td>
+      <td>2.550000</td>
+      <td>0.353571</td>
+      <td>572.225000</td>
+      <td>714</td>
+      <td>99</td>
+      <td>160223</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>14</td>
+      <td>yok gelir para devlet ücret vermek fatih kafa kürt müzisyen</td>
+      <td>233</td>
+      <td>1.987124</td>
+      <td>0.454936</td>
+      <td>545.399142</td>
+      <td>463</td>
+      <td>106</td>
+      <td>127078</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>16</td>
+      <td>savaş kurtulmak etmek vermek dünya yıl yok varmak</td>
+      <td>87</td>
+      <td>1.781609</td>
+      <td>0.390805</td>
+      <td>1052.632184</td>
+      <td>155</td>
+      <td>34</td>
+      <td>91579</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>maaş çalışmak almak kalmak kesinti gelmek kesmek çıkmak açıklamak bırakmak mezun vermek gün</td>
+      <td>224</td>
+      <td>1.495536</td>
+      <td>0.410714</td>
+      <td>317.897321</td>
+      <td>335</td>
+      <td>92</td>
+      <td>71209</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>13</td>
+      <td>banka ertelemek kredi vermek destek haber ödemek kart sicil esnaf yardımcı teskomb</td>
+      <td>160</td>
+      <td>1.443750</td>
+      <td>0.643750</td>
+      <td>636.812500</td>
+      <td>231</td>
+      <td>103</td>
+      <td>101890</td>
     </tr>
   </tbody>
 </table>
@@ -14903,6 +15269,22 @@ In that notebook, this method is used to extract topics from cluster of papers. 
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>The day which we inspected in this notebook was 6 April. On this day, president Erdoğan give a speech on 19.00. In <code>summary_df</code> the most interacted tweet cluster seems to be related with what president Erdoğan says about <em>Tekalifi Milliye emirleri</em>, which is an interesting result that complies with the agenda.  This topic was a significant one on that day.</p>
+<p>On the other hand, though it is not perfect, my approach is successful on clustering tweets extracting different topic against which people reacted.</p>
+<p>This work is far from conclusive but seems to have a potential to make improvements. I would like to discuss possible improvements.</p>
+<ul>
+<li>Vectorizing tweets with w2vec, only important words can be chosen using tf-idf approach</li>
+<li>Understanding clusters, most frequent ngrams or other methods might be more efficient, which should be tested.</li>
+<li>The clusters can be attempted to match with the news of the day</li>
+<li>Sentiment analysis can be integrated to analyze different tweet clusters</li>
+</ul>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
