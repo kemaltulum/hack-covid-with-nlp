@@ -39,9 +39,12 @@ public class App {
  			int i = 0;
  		    while (cursor.hasNext()) {
  		    	
- 		    	System.out.println(++i);
  		    	
  		    	Document doc = cursor.next();
+ 		    	
+ 		    	if(doc.containsKey("zemberek_nlp")) {
+ 		    		continue;
+ 		    	}
  		    	
  		    	Document zemberekDoc = new Document();
  		    	
@@ -51,6 +54,7 @@ public class App {
  		    	if (fullText.startsWith("RT")) {
  		        	continue;
  		        }
+ 		    	System.out.println(++i);
  		    	 		    	
  		    	String normalizedText = morph.normalizeSentence(fullText);
  		    	
@@ -60,11 +64,17 @@ public class App {
  		    	
  		    	String tokenizedText = "";
  		    	String clearedText = "";
+ 		    	String hashtagStr = "";
+ 		    	String mentionStr = "";
  		    	 		    	
  		    	for(String word: tokens) {
  		    		// Ignore hashtags and mentions
  		    		tokenizedText += word + " ";
- 		    		if(word.startsWith("#") || word.startsWith("@")){
+ 		    		if(word.startsWith("#")){
+ 		    			hashtagStr += word + " ";
+ 		    			continue;
+ 		    		} else if (word.startsWith("@")) {
+ 		    			mentionStr += word + " ";
  		    			continue;
  		    		}
  		    		clearedText += word + " ";
@@ -72,13 +82,35 @@ public class App {
  		    		
  		    	}
  		    	String lemmatizedText = "";
+ 		    	String lemmatizedTextV2 = "";
  		    	
  		    	if(clearedText.length() > 0) { 		    		
- 		    		lemmatizedText = morph.lemmatizeTweetWithDisambiguation(clearedText).replace("UNK", "");	    	
+ 		    		String[] results = morph.lemmatizeTweetWithDisambiguation(clearedText);	
+ 		    		lemmatizedText = results[0].replace("UNK", "");
+ 		    		lemmatizedTextV2 = results[1].replace("UNK", "");
+ 		    				
  		    	}
  		    	zemberekDoc.append("lemmatized_text", lemmatizedText);
+ 		    	zemberekDoc.append("lemmatized_text_v2", lemmatizedTextV2);
+ 		    	
+ 		    	if (mentionStr.length() < 2) {
+ 		    		mentionStr = " ";
+ 		    	} else {
+ 		    		lemmatizedText += " " + mentionStr;
+ 		    		lemmatizedTextV2 += " " + mentionStr;
+ 		    	}
+ 		    	if (hashtagStr.length() < 2) {
+ 		    		hashtagStr = " ";
+ 		    	} else {
+ 		    		lemmatizedText += " " + hashtagStr;
+ 		    		lemmatizedTextV2 += " " + hashtagStr;
+ 		    	}
+ 		    	
+ 		    	zemberekDoc.append("mentions", mentionStr);
+ 		    	zemberekDoc.append("hashtags", hashtagStr);
  		    	
  		    	zemberekDoc.append("tokenized_text", tokenizedText);
+ 		    	 
  		    	collection.updateOne(Filters.eq("_id", docId), Updates.set("zemberek_nlp", zemberekDoc));
  		    	
  		    }

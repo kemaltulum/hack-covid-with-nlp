@@ -11,7 +11,9 @@ import zemberek.morphology.analysis.AnalysisFormatters;
 import zemberek.morphology.analysis.InformalAnalysisConverter;
 import zemberek.morphology.analysis.SentenceAnalysis;
 import zemberek.morphology.analysis.SingleAnalysis;
+import zemberek.morphology.analysis.SingleAnalysis.MorphemeGroup;
 import zemberek.morphology.analysis.WordAnalysis;
+import zemberek.morphology.lexicon.DictionaryItem;
 import zemberek.morphology.lexicon.RootLexicon;
 import zemberek.normalization.TurkishSentenceNormalizer;
 import zemberek.normalization.TurkishSpellChecker;
@@ -196,16 +198,39 @@ public class Morphology {
 		}
 	}
 	
-	public String lemmatizeTweetWithDisambiguation(String tweet) {
+	public String[] lemmatizeTweetWithDisambiguation(String tweet) {
 		String resultString = "";
+		String resultString2 = "";
 		List<WordAnalysis> analysis = this.morphology.analyzeSentence(tweet);
 		SentenceAnalysis after = morphology.disambiguate(tweet, analysis);
 		for(SingleAnalysis newAnalysis: after.bestAnalysis()) {
+			
 			List<String> lemmas = newAnalysis.getLemmas();
-			String lemma = newAnalysis.getDictionaryItem().lemma;
-			resultString += lemma + " ";
+			DictionaryItem item = newAnalysis.getDictionaryItem();
+			String lemma = item.lemma;
+			String currentWord1 = "";
+			String currentWord2 = "";
+			
+			if(newAnalysis.isUnknown()) {
+				currentWord1 = newAnalysis.getStem();
+				currentWord2 = currentWord1;
+			}
+			else if(item.secondaryPos.shortForm == "Mention") {
+				currentWord1 = lemma.replace("?", "@");
+				currentWord2 = lemma.replace("?", "@");
+			} else if (item.secondaryPos.shortForm == "HashTag") {
+				currentWord1 = lemma.replace("?", "#");
+				currentWord2 = lemma.replace("?", "#");
+			} else {
+				currentWord1 = lemmas.get(lemmas.size()-1) + " ";
+				currentWord2 = lemma;
+			}
+			resultString += currentWord1 + " ";
+			
+			resultString2 += currentWord2 + " ";
 		}
-		return resultString;
+		String[] results = {resultString, resultString2};
+		return results;
 	}
 	
 	public void tryDisambiguation(String sentence) {
